@@ -19,13 +19,15 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset></PlatformToolset>
+    <PlatformToolset>
+    </PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset></PlatformToolset>
+    <PlatformToolset>
+    </PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -45,10 +47,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\mega;C:\Users\jlaing\Documents\Arduino\JML_SensorLibrary\JML_SensorLibrary;C:\Users\jlaing\Documents\Arduino\libraries\Adafruit_LSM9DS0_Library;C:\Users\jlaing\Documents\Arduino\libraries\Adafruit_LSM9DS0_Library\utility;C:\Users\jlaing\Documents\Arduino\libraries\Adafruit_Sensor-master;C:\Users\jlaing\Documents\Arduino\libraries\Adafruit_Sensor-master\utility;C:\Users\jlaing\Documents\Arduino\libraries\Encoder;C:\Users\jlaing\Documents\Arduino\libraries\Encoder\utility;C:\Users\jlaing\Documents\Arduino\libraries\i2c_device-master;C:\Users\jlaing\Documents\Arduino\libraries\i2c_device-master\utility;C:\Users\jlaing\Documents\Arduino\libraries\I2C-master;C:\Users\jlaing\Documents\Arduino\libraries\I2C-master\utility;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\de5u3f2e.zw3\Micro Platforms\default\debuggers;C:\Users\jlaing\Documents\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\tools\avr/avr/include/;C:\Program Files (x86)\Arduino\hardware\tools\avr//avr/include/avr/;C:\Program Files (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\jlaing\Documents\Arduino\JML_SensorLibrary\JML_SensorLibrary\__vm\.JML_SensorLibrary.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega2560__;_VMDEBUG=1;F_CPU=16000000L;ARDUINO=10609;ARDUINO_AVR_MEGA2560;ARDUINO_ARCH_AVR;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -73,19 +75,21 @@
       <FileType>CppCode</FileType>
     </None>
   </ItemGroup>
-  
   <ItemGroup>
-    <ClInclude Include="src\_micro-api\libraries\JML_SensorLibraryLib\src\JML_SensorLibraryLib.h" />
+    <ClInclude Include="AnalogDistance.h" />
+    <ClInclude Include="BinaryDistance.h" />
+    <ClInclude Include="__vm\.JML_SensorLibrary.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\_micro-api\libraries\JML_SensorLibraryLib\src\JML_SensorLibraryLib.cpp" />
+    <ClCompile Include="AnalogDistance.cpp" />
+    <ClCompile Include="BinaryDistance.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="src\_micro-api\libraries\JML_SensorLibraryLib\library.properties" />
-  </ItemGroup>
-  
-  
-   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM5" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
