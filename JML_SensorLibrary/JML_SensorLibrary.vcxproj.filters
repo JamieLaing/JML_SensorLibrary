@@ -27,12 +27,24 @@
     <ClInclude Include="AnalogDistance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GenericSensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JamieDistance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinaryDistance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AnalogDistance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GenericSensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JamieDistance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

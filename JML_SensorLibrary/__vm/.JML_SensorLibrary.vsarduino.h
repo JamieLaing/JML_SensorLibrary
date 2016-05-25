@@ -67,10 +67,15 @@ extern "C" void __cxa_pure_virtual() {;}
 //
 //
 void setupIMU();
+void encoderReport();
 
 #include <JML_SensorLibrary.ino>
 #include <AnalogDistance.cpp>
 #include <AnalogDistance.h>
 #include <BinaryDistance.cpp>
 #include <BinaryDistance.h>
+#include <GenericSensor.cpp>
+#include <GenericSensor.h>
+#include <JamieDistance.cpp>
+#include <JamieDistance.h>
 #endif
