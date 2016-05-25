@@ -9,13 +9,12 @@
 	#include "WProgram.h"
 #endif
 
-class BinaryDistance {
-private:
-	int _readingPin;
-	int _activationPin;
+#ifndef _GENERICSENSOR_h
+#include "GenericSensor.h"
+#endif // !_GENERICSENSOR_h
+
+class BinaryDistance: public GenericSensor {
 public:
-	void activate();
-	void deactivate();
 	BinaryDistance(int activationPin, int readingPin);
 	boolean objectDetected();
 };

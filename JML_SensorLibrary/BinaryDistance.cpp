@@ -4,20 +4,8 @@
 
 #include "BinaryDistance.h"
 
-BinaryDistance::BinaryDistance(int activationPin, int readingPin) {
-	_readingPin = readingPin;
-	_activationPin = activationPin;
-}
-
-void BinaryDistance::activate() {
-	pinMode(_activationPin, OUTPUT);
-	digitalWrite(_activationPin, HIGH);
-}
-
-void BinaryDistance::deactivate() {
-	pinMode(_activationPin, OUTPUT);
-	digitalWrite(_activationPin, LOW);
-}
+BinaryDistance::BinaryDistance(int activationPin, int readingPin) 
+	:GenericSensor(activationPin, readingPin) {}
 
 boolean BinaryDistance::objectDetected() {
 	boolean reading = false;
