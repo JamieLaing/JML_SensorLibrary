@@ -6,7 +6,7 @@
 */
 
 
-#include "JamieDistance.h"
+#include "PingDistance.h"
 #include "Adafruit_Sensor.h"
 #include "Adafruit_LSM9DS0.h"
 #include "AnalogDistance.h"
@@ -20,8 +20,6 @@ byte intUnitID;
 const byte enc1A = 2;
 const byte enc1B = 3;
 const byte pinButton = 5;
-const byte pinEcho = 6;
-const byte pinTrigger = 7;
 const byte pinSpeaker = 11;
 const byte pinLED = 13;
 const byte enc2A = 19;
@@ -43,6 +41,8 @@ const byte card_cs = 4;
 const byte ampGain0 = 37;
 const byte ampGain1 = 40;
 const byte ampActivate = 41;  //Bring this pin low to activate amplifier
+const byte pingPingFront = 6;
+const byte pinActPingFront = 7;
 const byte pinEdge1 = A0;
 const byte pinActEdge1 = 27;
 const byte pinEdge2 = A1;
@@ -88,6 +88,7 @@ AnalogDistance perim2IR = AnalogDistance(pinActPerim2, pinPerim2);
 AnalogDistance frontIR = AnalogDistance(pinActFrntIR, pinFrntIr);
 AnalogDistance perim3IR = AnalogDistance(pinActPerim3, pinPerim3);
 AnalogDistance perim4IR = AnalogDistance(pinActPerim4, pinPerim4);
+PingDistance frontPing = PingDistance(pinActPingFront, pingPingFront);
 
 
 
@@ -109,7 +110,6 @@ void setup() {
 	perim3IR.activate();
 	perim4IR.activate();
 	edgeRight.activate();
-	//Jamie1.activate();
 }
 
 // the loop function runs over and over again until power down or reset
@@ -142,6 +142,8 @@ void loop() {
 	Serial.println(perim3IR.readDistance());
 	Serial.print("Perimeter4IR: ");
 	Serial.println(perim4IR.readDistance());
+	Serial.print("Front Ping: ");
+	Serial.println(frontPing.readDistance());
 	/*Serial.print("Jamie1: ");
 	Serial.println(jamie1.readDistance());*/
 	Serial.println("");

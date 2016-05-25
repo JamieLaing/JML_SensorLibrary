@@ -1,7 +1,7 @@
-// JamieDistance.h
+// PingDistance.h
 
-#ifndef _JAMIEDISTANCE_h
-#define _JAMIEDISTANCE_h
+#ifndef _PINGDISTANCE_h
+#define _PINGDISTANCE_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
 	#include "arduino.h"
@@ -13,12 +13,10 @@
 #include "GenericSensor.h"
 #endif // !_GENERICSENSOR_h
 
-
-class JamieDistance: public GenericSensor {
+class PingDistance : public GenericSensor {
 public:
-	JamieDistance(int activationPin, int readingPin);
-	double readDistance();
-	
+	PingDistance(int activationPin, int readingPin);
+	float readDistance();
 };
 
 #endif

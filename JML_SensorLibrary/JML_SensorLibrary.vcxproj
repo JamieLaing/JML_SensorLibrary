@@ -71,6 +71,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="examples\DistanceExample.ino" />
     <None Include="JML_SensorLibrary.ino">
       <FileType>CppCode</FileType>
     </None>
@@ -79,21 +80,21 @@
     <ClInclude Include="AnalogDistance.h" />
     <ClInclude Include="BinaryDistance.h" />
     <ClInclude Include="GenericSensor.h" />
-    <ClInclude Include="JamieDistance.h" />
+    <ClInclude Include="PingDistance.h" />
     <ClInclude Include="__vm\.JML_SensorLibrary.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnalogDistance.cpp" />
     <ClCompile Include="BinaryDistance.cpp" />
     <ClCompile Include="GenericSensor.cpp" />
-    <ClCompile Include="JamieDistance.cpp" />
+    <ClCompile Include="PingDistance.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties arduino.upload.port="COM6" />
+      <UserProperties arduino.upload.port="COM5" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

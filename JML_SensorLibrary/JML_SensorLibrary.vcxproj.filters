@@ -16,6 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="JML_SensorLibrary.ino" />
+    <None Include="examples\DistanceExample.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.JML_SensorLibrary.vsarduino.h">
@@ -30,7 +31,7 @@
     <ClInclude Include="GenericSensor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="JamieDistance.h">
+    <ClInclude Include="PingDistance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,7 +45,7 @@
     <ClCompile Include="GenericSensor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="JamieDistance.cpp">
+    <ClCompile Include="PingDistance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
