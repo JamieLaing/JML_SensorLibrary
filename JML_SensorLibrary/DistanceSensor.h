@@ -1,7 +1,7 @@
-// GenericSensor.h
+// DistanceSensor.h
 
-#ifndef _GENERICSENSOR_h
-#define _GENERICSENSOR_h
+#ifndef _DISTANCESENSOR_h
+#define _DISTANCESENSOR_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
 	#include "arduino.h"
@@ -12,12 +12,12 @@
 
 #endif
 
-class GenericSensor {
+class DistanceSensor {
 public:
 	int _readingPin;
 	int _activationPin;
 public:
 	inline virtual void activate();
 	inline virtual void deactivate();
-	GenericSensor(int activationPin, int readingPin);
+	DistanceSensor(int activationPin, int readingPin);
 };

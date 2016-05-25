@@ -2,20 +2,20 @@
 // 
 // 
 
-#include "GenericSensor.h"
+#include "DistanceSensor.h"
 
-GenericSensor::GenericSensor(int activationPin, int readingPin)
+DistanceSensor::DistanceSensor(int activationPin, int readingPin)
 {
 	_readingPin = readingPin;
 	_activationPin = activationPin;
 }
 
-void GenericSensor::activate() {
+void DistanceSensor::activate() {
 	pinMode(_activationPin, OUTPUT);
 	digitalWrite(_activationPin, HIGH);
 }
 
-void GenericSensor::deactivate() {
+void DistanceSensor::deactivate() {
 	pinMode(_activationPin, OUTPUT);
 	digitalWrite(_activationPin, LOW);
 }

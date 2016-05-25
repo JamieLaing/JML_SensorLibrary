@@ -79,14 +79,14 @@
   <ItemGroup>
     <ClInclude Include="AnalogDistance.h" />
     <ClInclude Include="BinaryDistance.h" />
-    <ClInclude Include="GenericSensor.h" />
+    <ClInclude Include="DistanceSensor.h" />
     <ClInclude Include="PingDistance.h" />
     <ClInclude Include="__vm\.JML_SensorLibrary.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnalogDistance.cpp" />
     <ClCompile Include="BinaryDistance.cpp" />
-    <ClCompile Include="GenericSensor.cpp" />
+    <ClCompile Include="DistanceSensor.cpp" />
     <ClCompile Include="PingDistance.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

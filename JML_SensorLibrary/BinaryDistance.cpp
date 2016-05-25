@@ -5,7 +5,7 @@
 #include "BinaryDistance.h"
 
 BinaryDistance::BinaryDistance(int activationPin, int readingPin) 
-	:GenericSensor(activationPin, readingPin) {}
+	:DistanceSensor(activationPin, readingPin) {}
 
 boolean BinaryDistance::objectDetected() {
 	boolean reading = false;

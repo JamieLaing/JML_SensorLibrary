@@ -75,8 +75,8 @@ void encoderReport();
 #include <BinaryDistance.cpp>
 #include <BinaryDistance.h>
 #include <examples\DistanceExample.ino>
-#include <GenericSensor.cpp>
-#include <GenericSensor.h>
+#include <DistanceSensor.cpp>
+#include <DistanceSensor.h>
 #include <PingDistance.cpp>
 #include <PingDistance.h>
 #endif

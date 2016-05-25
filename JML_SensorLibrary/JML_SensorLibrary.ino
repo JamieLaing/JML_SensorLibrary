@@ -13,7 +13,6 @@
 #include "BinaryDistance.h"
 #include <i2c.h>
 #include <i2c_device.h>
-#include <pca9635.h>
 #include <Encoder.h>
 
 byte intUnitID;

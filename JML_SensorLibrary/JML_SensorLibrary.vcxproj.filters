@@ -28,10 +28,10 @@
     <ClInclude Include="AnalogDistance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GenericSensor.h">
+    <ClInclude Include="PingDistance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PingDistance.h">
+    <ClInclude Include="DistanceSensor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -42,10 +42,10 @@
     <ClCompile Include="AnalogDistance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GenericSensor.cpp">
+    <ClCompile Include="PingDistance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PingDistance.cpp">
+    <ClCompile Include="DistanceSensor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

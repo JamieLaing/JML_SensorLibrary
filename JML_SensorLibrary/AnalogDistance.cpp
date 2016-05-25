@@ -5,7 +5,7 @@
 #include "AnalogDistance.h"
 
 AnalogDistance::AnalogDistance(int activationPin, int readingPin)
-	: GenericSensor(activationPin, readingPin) {}
+	: DistanceSensor(activationPin, readingPin) {}
 
 double AnalogDistance::readDistance() {
 	int irValue = analogRead(_readingPin);

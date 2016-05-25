@@ -9,11 +9,11 @@
 	#include "WProgram.h"
 #endif
 
-#ifndef _GENERICSENSOR_h
-#include "GenericSensor.h"
-#endif // !_GENERICSENSOR_h
+#ifndef _DISTANCESENSOR_h
+#include "DistanceSensor.h"
+#endif // !_DISTANCESENSOR_h
 
-class PingDistance : public GenericSensor {
+class PingDistance : public DistanceSensor {
 public:
 	PingDistance(int activationPin, int readingPin);
 	float readDistance();

@@ -5,7 +5,7 @@
 #include "PingDistance.h"
 
 PingDistance::PingDistance(int activationPin, int readingPin)
-	: GenericSensor(activationPin, readingPin) {
+	: DistanceSensor(activationPin, readingPin) {
 	pinMode(activationPin, OUTPUT);
 	pinMode(readingPin, INPUT);
 }
