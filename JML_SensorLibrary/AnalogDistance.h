@@ -9,13 +9,12 @@
 	#include "WProgram.h"
 #endif
 
-class AnalogDistance {
-private:
-	int _readingPin;
-	int _activationPin;
+#ifndef _GENERICSENSOR_h
+#include "GenericSensor.h"
+#endif // !_GENERICSENSOR_h
+
+class AnalogDistance: public GenericSensor {
 public:
-	void activate();
-	void deactivate();
 	AnalogDistance(int activationPin, int readingPin);
 	double readDistance();
 };

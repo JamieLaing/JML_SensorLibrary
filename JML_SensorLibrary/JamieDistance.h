@@ -9,12 +9,16 @@
 	#include "WProgram.h"
 #endif
 
+#ifndef _GENERICSENSOR_h
 #include "GenericSensor.h"
+#endif // !_GENERICSENSOR_h
+
 
 class JamieDistance: public GenericSensor {
 public:
-	double readDistance();
 	JamieDistance(int activationPin, int readingPin);
+	double readDistance();
+	
 };
 
 #endif

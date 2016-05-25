@@ -86,10 +86,8 @@ BinaryDistance edgeRight = BinaryDistance(pinActEdge2, pinEdge2);
 AnalogDistance perim1IR = AnalogDistance(pinActPerim1, pinPerim1);
 AnalogDistance perim2IR = AnalogDistance(pinActPerim2, pinPerim2);
 AnalogDistance frontIR = AnalogDistance(pinActFrntIR, pinFrntIr);
-//AnalogDistance perim3IR = AnalogDistance(pinActPerim3, pinPerim3);
+AnalogDistance perim3IR = AnalogDistance(pinActPerim3, pinPerim3);
 AnalogDistance perim4IR = AnalogDistance(pinActPerim4, pinPerim4);
-
-JamieDistance jamie1 = JamieDistance(pinActPerim3, pinPerim3);
 
 
 
@@ -108,16 +106,16 @@ void setup() {
 	perim1IR.activate();
 	perim2IR.activate();
 	frontIR.activate();
-	//perim3IR.activate();
+	perim3IR.activate();
 	perim4IR.activate();
 	edgeRight.activate();
-	jamie1.activate();
+	//Jamie1.activate();
 }
 
 // the loop function runs over and over again until power down or reset
 void loop() {
 
-	/*encoderReport();
+	encoderReport();
 	lsm.read();
 	Serial.print("Accel X: "); Serial.print((int)lsm.accelData.x); Serial.print(" ");
 	Serial.print("Y: "); Serial.print((int)lsm.accelData.y);       Serial.print(" ");
@@ -135,17 +133,17 @@ void loop() {
 	Serial.print("Edge right:");
 	Serial.println(edgeRight.objectDetected());
 	Serial.print("Perimeter1IR: ");
-	Serial.println(perim1IR.readDistance());*/
+	Serial.println(perim1IR.readDistance());
 	Serial.print("Perimeter2IR: ");
 	Serial.println(perim2IR.readDistance());
-	/*Serial.print("FrontIR: ");
+	Serial.print("FrontIR: ");
 	Serial.println(frontIR.readDistance());
 	Serial.print("Perimeter3IR: ");
 	Serial.println(perim3IR.readDistance());
 	Serial.print("Perimeter4IR: ");
-	Serial.println(perim4IR.readDistance());*/
-	Serial.print("Jamie1: ");
-	Serial.println(jamie1.readDistance());
+	Serial.println(perim4IR.readDistance());
+	/*Serial.print("Jamie1: ");
+	Serial.println(jamie1.readDistance());*/
 	Serial.println("");
 	delay(1500);
   
